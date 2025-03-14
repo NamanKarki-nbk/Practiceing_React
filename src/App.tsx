@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Tailwind_Practice from "./components/tailwind_practice";
 import Resposive_Practice from "./components/resposive_practice";
 import Hooks from "./components/hooks";
+import Theme_Switcher from "./context/Theme_Switcher";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/res" element={<Resposive_Practice />} />
         <Route path="hooks" element={<Hooks />} />
       </Routes>
+      <Theme_Switcher />
     </BrowserRouter>
   );
 }
